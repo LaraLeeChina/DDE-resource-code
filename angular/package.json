@@ -39,7 +39,7 @@
     "@progress/kendo-data-query": "^1.0.0",
     "@progress/kendo-drawing": "^1.0.0",
     "@progress/kendo-theme-default": "latest",
-    "angular": "^1.7.8",
+    "angular": "^1.7.9",
     "angular-file-upload": "^2.5.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.0",
