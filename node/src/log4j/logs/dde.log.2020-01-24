@@ -1,0 +1,119 @@
+[2020-01-24T00:21:28.935] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-24T00:25:11.079] [INFO] logFile - /login request request
+[2020-01-24T00:25:12.313] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-24T00:25:18.532] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:25:18.686] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:27:07.624] [INFO] logFile - /login request request
+[2020-01-24T00:27:07.644] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-24T00:27:07.745] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:27:07.787] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:28:52.116] [INFO] logFile - /login request request
+[2020-01-24T00:28:52.148] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-24T00:28:52.909] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:28:52.962] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:29:04.729] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:29:04.771] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:29:23.314] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:29:23.353] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:38:44.064] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-24T00:39:02.288] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:39:03.548] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:39:11.196] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:39:11.234] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:39:20.217] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:39:20.254] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:44:30.989] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:44:31.025] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:52:50.186] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:52:50.242] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:55:14.078] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:55:14.127] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:55:45.889] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:55:45.939] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:56:53.655] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:56:53.696] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:57:13.167] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:57:13.213] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:57:18.148] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:57:18.192] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:58:55.405] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:58:55.455] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:59:14.528] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:59:14.579] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T00:59:25.929] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T00:59:25.973] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:00:00.993] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:00:01.036] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:01:42.569] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:01:42.624] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:01:55.775] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:01:55.824] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:02:58.415] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:02:58.461] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:03:19.455] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:03:19.495] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:03:36.267] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:03:36.313] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:03:52.765] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:03:52.799] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:04:17.035] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:04:17.078] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:06:11.404] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:06:11.489] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:06:31.158] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:06:31.200] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:06:35.751] [INFO] logFile - /publication/export/endeca request
+[2020-01-24T01:06:58.242] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-24T01:06:58.775] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-24T01:06:58.792] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-24T01:06:58.813] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-24T01:06:58.831] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-24T01:09:04.183] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:09:04.224] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:09:37.108] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:09:37.165] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:09:42.416] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:09:42.467] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:10:48.382] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:10:48.428] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:14:12.872] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:14:12.948] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:16:41.038] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:16:41.097] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:16:57.492] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:16:57.498] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:16:57.566] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:16:57.611] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:18:07.563] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:18:07.623] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:18:28.243] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:18:28.282] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:25:41.809] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:25:41.932] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:25:58.782] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:25:58.834] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-24T01:36:30.923] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-24T01:36:30.957] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULldfUDdIMVlkUGdqWVVudF9QMWktSk9DVVBORlgyeHFTQVBSV2tNUWdNWW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5Nzk2OTI5LCJleHAiOjE1Nzk4MDA1MjksImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.UQ6YFrDm0DBOuatTST0iOIPtdWobAqQlFTgOMkM9ZQvklBTfiYTTrPWpRDdo5oIUOHkrK9Kd19Gacq0dfPd6Cwl09QWSEoOiAhIYLkKr8WuYW2xgdvYOOMqzJhzs02twWdeDk6xrEQkvVI_NM0I8Lz1vPx5Eowire4dUHjeJd9TRII4MbFKOyqqodFxTBxwwyyIUetjcFjGT8YwYULlCej6LJ7MhWkrTQ2NqOunObCZ34HDR_vZdYHcaKk3i0ntOFntXaBWmzU_Yzu9TZ1lEIUDjMQzEEoG48G3e_z_FmqsCYPzImoKKLqzaYzzNAJoWyZ2FTfHZi8ZF69Su_Tpgwg',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.W_P7H1YdPgjYUnt_P1i-JOCUPNFX2xqSAPRWkMQgMYo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579796929,
+     exp: 1579800529,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }

@@ -1,0 +1,118 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+.signin{
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 20px;
+  font-size: 32px;
+}
+.title{
+  padding-right:0;
+  font: 1em;
+}
+.input-login{
+  margin-bottom: 9%;
+  width: 100%;
+}
+.login{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  -moz-box-shadow:  0px 0px 5px #8F8F8D; 
+  -webkit-box-shadow: 0px 0px 5px #8F8F8D; 
+  box-shadow: 0px 0px 5px #8F8F8D;
+}
+.btn {
+  width: 100%;
+}
+.btn-login{
+  width: 100%;
+  height: 12%;
+  background: #0085D5;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+.logo{
+  height: 25%;
+  background: url("../../assets/logo.png");
+  background-size: 100% 100%;
+}
+.logintop{
+  background: white;
+  height: 75%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-bottom: 60px;
+}
+.login-logo{
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/login-blue.png") no-repeat;
+  background-size:40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  margin-top:30px;
+}
+.form-group{
+  font-size: 14px;
+}
+.forgotPsw{
+  font-size: 14px;
+  color: #0085D5;
+}
+.submitBtn{
+  float: right;
+}
+.hidden{
+  display: none;
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40em;
+  text-align: center;
+  font-size: 14px;
+  background: url("https://www.agilent.com/login/assets/images/loader.gif") no-repeat center rgba(255,255,255,0.8);
+}
+.tips{
+  padding: 15px;
+  margin: 15px 0;
+  background: #FAF1F1;
+  display: flex;
+  justify-content: center;
+}
+.tips::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-right: 10px;
+    background: url("https://www.agilent.com/login/assets/images/alert.png") no-repeat;
+}
+.tips small{
+  display: inline-block;
+  width: calc(100% - 26px);
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+  color: #D6001C;
+  margin: 0;
+}
+.tips a{
+  color: #0085D5;
+}
+.login-help {
+  font-size: 12px;
+}
+/*.font-red{ color: red; }*/

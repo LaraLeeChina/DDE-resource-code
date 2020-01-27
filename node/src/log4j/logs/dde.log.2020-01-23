@@ -1,0 +1,173 @@
+[2020-01-23T14:23:36.038] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:43:12.434] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:43:57.381] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:43:57.390] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:43:57.677] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:47:08.474] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:47:19.275] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:47:20.818] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:47:41.541] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:47:43.172] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:48:34.562] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:48:37.572] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:48:41.533] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:48:41.808] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:48:41.885] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:48:41.965] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:48:42.045] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:49:41.472] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:49:41.745] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:49:41.828] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:49:41.912] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:49:41.992] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:49:49.416] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:49:49.645] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:49:49.723] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:49:49.809] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:49:49.893] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:52:09.260] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:52:11.182] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:52:12.213] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:52:14.181] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:53:40.972] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:53:41.249] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:53:41.328] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:53:41.420] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:53:41.500] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:53:42.364] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:53:42.600] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:53:42.681] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:53:42.760] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:53:42.841] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:53:43.448] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:53:43.677] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:53:43.773] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:53:43.861] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:53:43.949] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:54:36.353] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:54:41.183] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:55:34.510] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:55:34.800] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:55:34.880] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:55:34.961] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:55:35.040] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:57:32.198] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T14:58:16.039] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:58:16.069] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:58:19.065] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T14:59:34.659] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:59:34.963] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:59:35.044] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:59:35.124] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:59:35.204] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:59:44.072] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:59:44.299] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:59:44.381] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:59:44.463] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:59:44.549] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T14:59:46.725] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T14:59:46.959] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T14:59:47.041] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T14:59:47.122] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T14:59:47.211] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:01:30.777] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:01:33.773] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:02:36.229] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:02:36.491] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:02:36.573] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:02:36.655] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:02:36.733] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:02:37.170] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:02:37.396] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:02:37.473] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:02:37.553] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:02:37.636] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:06:24.340] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:06:28.054] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:06:28.531] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:06:31.044] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:07:09.666] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:07:12.669] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:08:14.798] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:08:15.074] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:08:15.161] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:08:15.252] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:08:15.342] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:08:30.541] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:08:30.792] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:08:30.881] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:08:30.968] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:08:31.061] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:08:31.941] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:08:32.170] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:08:32.257] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:08:32.353] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:08:32.440] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:08:44.873] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:08:49.761] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:09:44.732] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:09:45.018] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:09:45.106] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:09:45.194] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:09:45.278] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:13:35.013] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:13:49.443] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:13:49.973] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:13:52.437] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:14:31.052] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:14:34.059] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:15:36.552] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:15:36.825] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:15:36.904] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:15:36.984] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:15:37.064] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:15:43.601] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:15:43.834] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:15:43.914] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:15:43.993] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:15:44.073] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:15:51.614] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:15:51.858] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:15:51.938] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:15:52.014] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:15:52.093] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:16:03.398] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:16:11.560] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:16:11.840] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:16:11.920] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:16:12.000] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:16:12.080] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:16:25.632] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:16:25.861] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:16:25.940] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:16:26.020] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:16:26.105] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:17:03.942] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:17:04.224] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:17:04.311] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:17:04.392] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:17:04.472] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:19:17.592] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:21:28.306] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:21:31.858] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:22:00.748] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:22:02.276] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:22:54.188] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:22:54.464] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:22:54.548] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:22:54.628] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:22:54.707] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:23:35.832] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:23:39.106] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:24:41.594] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:24:41.858] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:24:41.945] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:24:42.072] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:24:42.165] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-23T15:28:51.678] [INFO] logFile - Run Application Success, Port:  5555
+[2020-01-23T15:28:53.363] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-23T15:29:47.027] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-23T15:29:47.298] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-23T15:29:47.376] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-23T15:29:47.454] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-23T15:29:47.533] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;

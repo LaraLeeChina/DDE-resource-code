@@ -1,0 +1,202 @@
+
+<div class="insert-wrapper">
+  <div class="">
+    <div class="back-insert" ><div class="insertBtn insert-btn" (click)="goBack()">{{backText}}</div><div class="insertBtn insert-btn" (click)="insert()">Save</div></div>
+    
+    <form [formGroup]="basicFormModel">
+      <div class="form-group row">
+        <label for="PublicationTitle" class="col-sm-2 control-label">Publication Title</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control form-control-sm" id="PublicationTitle"
+                 placeholder=""  formControlName="PublicationTitle" >
+        </div>
+        <label for="PublicationLink" class="col-sm-2 control-label">Publication Link</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control form-control-sm" id="PublicationLink"
+                 placeholder=""  formControlName="PublicationLink" >
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Abstract" class="col-sm-2 control-label">Primary Author</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control form-control-sm" id="Abstract"
+                 placeholder="" formControlName="PrimaryAuthor">
+        </div>
+        <label for="Authors" class="col-sm-2 control-label">Authors (Comma Separated)</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control form-control-sm" id="Authors"
+                 placeholder="" formControlName="Authors">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="JournalName" class="col-sm-2 control-label">Journal Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control form-control-sm" id="JournalName" placeholder=""  formControlName="JournalName">         
+              <!-- <select name="JournalName" class="form-control form-control-sm" id="JournalName" formControlName="JournalName"></select>  -->
+          <!-- <kendo-dropdownlist class="form-control form-control-sm" [data]="journalNameListItem" id="JournalName" formControlName="JournalName" [textField]="'value'" [valueField]="'key'">
+               </kendo-dropdownlist>              -->
+        </div>
+        <label for="PublicationDate" class="col-sm-2 control-label">Publication Date</label>
+        <div class="col-sm-4">
+          <kendo-datepicker  formControlName="PublicationDate" id="PublicationDate"></kendo-datepicker>
+          <!-- <input type="date" class="form-control form-control-sm" id="PublicationDate"
+                 placeholder="Please choose date" date-format="yy-mm-dd" name="PublicationDate"  [(ngModel)]="column_values.PublicationDate">         -->
+        </div>
+      </div>
+      <div class="insert-column-wrapper">
+        <kendo-grid
+          [data]="subPubColumnformat"
+          [pageSize]="gridState.take"
+          [sort]="gridState.sort"
+          [sortable]="true"
+          [pageable]="true"
+          [height]="400"
+          [scrollable]="scrollable"
+          (edit)="CloneHandler($event)"
+          (dataStateChange)="onStateChange($event)"
+          (cellClose)="cellCloseHandler($event)"
+          (cellClick)="cellClickHandler($event)"
+          (cancel)="cancelHandler($event)"
+          (remove)="removeHandler($event)"
+          (save)="saveHandler($event)"
+          (add)="addHandler($event)"
+        >
+          <ng-template kendoGridToolbarTemplate>
+            <button kendoGridAddCommand class="insertBtn">Add Row</button>
+          </ng-template>
+          <kendo-grid-column field="Research Area" title="Research Area" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="researchAreaListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 [formControl]="subFormModel.get('researchArea')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Cell Line" title="Cell Line" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="cellLineListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (valueChange)="valueChange($event)"
+                                 (removeTag)="removeCellLine($event)"
+                                 [formControl]="subFormModel.get('cellLine')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Cell Type" title="Cell Type" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="cellTypeListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (focus)="cellTypeFocus()"
+                                 [formControl]="subFormModel.get('cellType')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Species" title="Species" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex">
+              <kendo-multiselect [data]="speciesListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 [formControl]="subFormModel.get('species')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Platform" title="Analysis Platform" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-dropdownlist [data]="platfromListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (valueChange)="platformChange($event)"
+                                 [formControl]="subFormModel.get('platform')"
+              >
+              </kendo-dropdownlist>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Product"  title="Product" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="productListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (valueChange)="productChange($event)"
+                                 (focus)="productFocus()"
+                                 (removeTag)="removeProduct($event)"
+                                 [formControl]="subFormModel.get('Product')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Assay"  title="Assay" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="assayListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (valueChange)="assayChange($event)" 
+                                 (removeTag)="removeAssay($event)"
+                                 (focus)="AssayFocus()"
+                                 [formControl]="subFormModel.get('Assay')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Part"  title="Part" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="partListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 (focus)="partFocus()"
+                                 [formControl]="subFormModel.get('part')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Cell Seeding Density" title="Cell Seeding Density" width="180" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="CSDListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 [formControl]="subFormModel.get('cellSeedingDensity')"
+              >
+              </kendo-multiselect>
+            </ng-template>
+          </kendo-grid-column>
+          <kendo-grid-column field="Plate Coating" title="Plate Coating" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+             <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+              <kendo-multiselect [data]="plateCoatingListItem"
+                                 [textField]="'value'"
+                                 [valueField]="'key'"
+                                 [formControl]="subFormModel.get('plateCoating')"
+              >
+              </kendo-multiselect> 
+             </ng-template>
+          </kendo-grid-column>
+          <!-- <kendo-grid-column field="Create/Update Date" title="Last Modify Date" width="150" *ngIf="pubID" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}" ></kendo-grid-column> -->
+          <kendo-grid-command-column title="Command" [locked]="true" width="150" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+            <ng-template kendoGridCellTemplate let-isNew="isNew">
+              <div kendoGridEditCommand class="btn-grid">Clone</div>
+              <div kendoGridRemoveCommand class="btn-grid">Remove</div>
+              <button kendoGridSaveCommand class="btn-grid">{{ isNew ? 'Add' : 'Save' }}</button>
+              <button kendoGridCancelCommand class="btn-grid">{{ isNew ? 'Cancel' : 'Cancel' }}</button>
+            </ng-template>
+          </kendo-grid-command-column >
+        </kendo-grid>
+      </div>
+    </form>
+  </div>
+  <!--<div class="btn-wrapper">
+      <div class="insertBtn insert-btn" (click)="insert()">Save</div>
+      <div class="insertBtn clear-btn" (click)="Cancel()">Clear</div>
+  </div>-->
+  <kendo-dialog title="Please confirm" *ngIf="dialogOpened" (close)="close()" [minWidth]="250" [width]="400">
+    <p style="margin: 30px; text-align: center;">This operation will delete the selected data from the database. Are you sure you want to continue?</p>
+    <kendo-dialog-actions>
+        <button kendoButton (click)="action('no')" class="dialog-button dialog-button-no">No</button>
+        <button kendoButton (click)="action('yes')" primary="true" class="dialog-button dialog-button-yes">Yes</button>
+    </kendo-dialog-actions>
+  </kendo-dialog>
+</div>

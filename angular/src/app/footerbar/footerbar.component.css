@@ -1,0 +1,16 @@
+.footerBar{
+  width: 100%;
+  height: 50px;
+  background: #0085d5;
+  position: absolute;
+  left:0;
+  bottom: 0;
+}
+.agilent-logo{
+  height: 100%;
+  width: 80px;
+  background: url("../../assets/agilent-logo-white.png") no-repeat left center;
+  background-size: 144px;
+  float: right;
+  margin-right: 50px;
+}

@@ -1,0 +1,715 @@
+[2020-01-25T13:20:06.336] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-25T13:20:34.086] [INFO] logFile - /login request request
+[2020-01-25T13:20:35.734] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-25T13:20:36.121] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:20:36.247] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T13:20:56.469] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:20:56.601] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:20:56.603] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T13:20:56.704] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:20:56.728] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:20:56.729] [INFO] logFile - GET /platform request
+[2020-01-25T13:20:56.759] [INFO] logFile - GET /business request
+[2020-01-25T13:20:56.779] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T13:20:56.780] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T13:20:56.815] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:20:56.831] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T13:20:56.894] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T13:20:56.895] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T13:20:56.896] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T13:21:01.543] [INFO] logFile - GET /business request
+[2020-01-25T13:21:01.615] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T13:21:07.686] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:21:07.837] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T13:21:13.987] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:21:14.007] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T13:21:14.011] [INFO] logFile - GET /platform request
+[2020-01-25T13:21:14.015] [INFO] logFile - GET /business request
+[2020-01-25T13:21:14.022] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T13:21:14.026] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:21:14.096] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:21:14.107] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T13:21:14.110] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:21:14.125] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T13:21:14.128] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T13:21:14.134] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T13:21:14.224] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:21:14.227] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T13:21:56.763] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T13:21:56.764] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T13:21:56.849] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T13:21:56.860] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T13:22:35.116] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:22:35.244] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T13:24:22.425] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:24:22.457] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T13:24:22.460] [INFO] logFile - GET /platform request
+[2020-01-25T13:24:22.474] [INFO] logFile - GET /business request
+[2020-01-25T13:24:22.475] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T13:24:22.477] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:24:22.514] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:24:22.520] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:24:22.566] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T13:24:22.567] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T13:24:22.569] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T13:24:22.579] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T13:24:22.580] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T13:24:22.623] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:24:35.988] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:24:36.156] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T13:24:47.856] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:24:48.002] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T13:24:52.034] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:24:52.056] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T13:24:52.068] [INFO] logFile - GET /platform request
+[2020-01-25T13:24:52.069] [INFO] logFile - GET /business request
+[2020-01-25T13:24:52.073] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T13:24:52.079] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T13:24:52.094] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T13:24:52.096] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T13:24:52.125] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T13:24:52.133] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T13:24:52.134] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T13:24:52.153] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T13:24:52.154] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T13:24:52.179] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T14:20:55.614] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T14:20:55.615] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.409] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T14:20:56.410] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.412] [INFO] logFile - GET /platform request
+[2020-01-25T14:20:56.413] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.414] [INFO] logFile - GET /business request
+[2020-01-25T14:20:56.415] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.418] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T14:20:56.418] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.421] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T14:20:56.421] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:20:56.423] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T14:20:56.423] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULm10TXJQR1ZTbjhrNGJEU1ZvaDVqWnpLWmF1SGxXbzNZZmt5NVdCd0w0ZW8iLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTI5NjMzLCJleHAiOjE1Nzk5MzMyMzMsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.EVmQkQKZfflL_w1AVg5Mu9FGU9I0nSlfrNZZ2q1ZD3keiXRoDHMa8nPzQKc7Ub_WLA2mwKlMsbzgX1GplzQIZ1bQTQtFnZePiFE81DZqexy3vg_AARCg60jse61pARmefnZzHLROs8gYh3_dqsEJhY6rcrbFtY_Aymg6ksuNAITFWZ4bxUnTypC_4M5WZxMI3U0kwuKjrwrSgMPdqBfiztcUNhvhyqKpoPhuAOM03iso_y6ZxKoKmTia6rItkT1GwSgV7IlwQBYHOApOQ0YdLciyVjGCGzIAF1267l-C3hsFPLvSShfFCfc6T4aoomcBtaFEB_mmlp7coX2ktOsHwQ',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.mtMrPGVSn8k4bDSVoh5jZzKZauHlWo3Yfky5WBwL4eo',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579929633,
+     exp: 1579933233,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T14:32:32.532] [INFO] logFile - /login request request
+[2020-01-25T14:32:33.973] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-25T14:32:35.160] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T14:32:35.239] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T17:38:03.110] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T17:38:03.163] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjV3QnFGanVCc2Y2cUlJZXN2aUFBMl9PTnZnZzNFdlJId19NMjRnbEQ3YlUiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTMzOTUxLCJleHAiOjE1Nzk5Mzc1NTEsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.YmW2uquJQQifVQZTCO3CDkNpRN-Q-MyZMJYGIuCV24j8ntOUdmsdjJ-YvYJmG2alB5NptfsjHgXE5KLy39tLrF-laFzR5IRgJyKsrRkmIu6nNwUGTXPL8Md6mjREfyjki7vtRYy-N06OMnVesSlExN6GrlHmo8cuNWt7rMBPcMqJ99cxDGiYpEgEsu9ehQDQVIURcbrYmi7f0fHW3yKjPxt20BxKIy5rV_mOH3eXdAXCckoL3qEM8c7U8ZtAbhx-0yPUcFptFet91d_Nz_SYmyEelH5xd4545yjygmFWk-bx1ULhnZ5dwC-2fkNd2js0IFZh_1wLaSC1Sbs0y8U6lA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.5wBqFjuBsf6qIIesviAA2_ONvgg3EvRHw_M24glD7bU',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579933951,
+     exp: 1579937551,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T17:39:07.839] [INFO] logFile - /login request request
+[2020-01-25T17:39:09.464] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-25T17:39:10.484] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T17:39:10.530] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T17:53:23.939] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T17:53:23.977] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T17:53:23.992] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T17:53:23.998] [INFO] logFile - GET /platform request
+[2020-01-25T17:53:24.005] [INFO] logFile - GET /business request
+[2020-01-25T17:53:24.009] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T17:53:24.043] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T17:53:24.124] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T17:53:24.137] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T17:53:24.141] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T17:53:24.146] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T17:53:24.149] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T17:53:24.150] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T17:53:24.151] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T20:47:22.025] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T20:47:22.051] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.079] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T20:47:22.082] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.085] [INFO] logFile - GET /platform request
+[2020-01-25T20:47:22.085] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.088] [INFO] logFile - GET /business request
+[2020-01-25T20:47:22.088] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.092] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T20:47:22.092] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.095] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T20:47:22.096] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T20:47:22.100] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T20:47:22.100] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtTOTJRV3g1S0YwbExodzdzWFViWGx2NjJaV04xeVhiVVpDb2RUcTRNOXMiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTQ1MTQ2LCJleHAiOjE1Nzk5NDg3NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.eChfqTNbpfVLtriiPu4CRgLmGlLLKVSSRL_GJjnYG2UdaCE-AaVFjbiEl1E3rRYqME8wx3JmA5L9uwYkbEz6Dx-jULFIHopyDxzRT2QfUmpjd-ciUrJxRzV0CDNX-2bKGCjnfpiVI-FZ2rdtt4mB861h9nmz00AqkdiQLHE0n-yMDbWUEje8eGnWptAlQdKswtXLFu2rjYcRY4jT-nVb7Fj4zKN1D3YpJ1RDUwq08ddwjEygFudV92rRglYTOkcx9Hykl0UZTCkTHuZyxfVMSUpf44Xk44GNO5UJBpxX3EVL7H2TwlKaX5Lsf7-eb7OnKcwdfYLsQjGLCriCsN-iJA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.kS92QWx5KF0lLhw7sXUbXlv62ZWN1yXbUZCodTq4M9s',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579945146,
+     exp: 1579948746,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-25T21:37:32.174] [INFO] logFile - /login request request
+[2020-01-25T21:37:33.993] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-25T21:37:42.671] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:37:42.722] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T21:38:40.381] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:38:40.458] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:38:40.563] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T21:38:40.567] [INFO] logFile - GET /platform request
+[2020-01-25T21:38:40.574] [INFO] logFile - GET /business request
+[2020-01-25T21:38:40.579] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T21:38:40.622] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:38:40.630] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:38:40.646] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T21:38:40.661] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T21:38:40.668] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T21:38:40.691] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T21:38:40.704] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:38:40.706] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T21:39:30.475] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T21:39:30.654] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T21:39:31.547] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T21:39:31.669] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T21:46:21.300] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:46:21.397] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T21:50:06.274] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-25T21:50:29.902] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:50:31.135] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T21:50:56.996] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:50:57.023] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:50:57.059] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T21:50:57.063] [INFO] logFile - GET /platform request
+[2020-01-25T21:50:57.066] [INFO] logFile - GET /business request
+[2020-01-25T21:50:57.069] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T21:50:57.073] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:50:57.077] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:50:57.087] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T21:50:57.107] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T21:50:57.109] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T21:50:57.121] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T21:50:57.123] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T21:50:57.131] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:53:30.782] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:53:30.839] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T21:53:46.099] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:53:46.133] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:53:46.160] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T21:53:46.166] [INFO] logFile - GET /platform request
+[2020-01-25T21:53:46.168] [INFO] logFile - GET /business request
+[2020-01-25T21:53:46.183] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T21:53:46.191] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T21:53:46.193] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T21:53:46.195] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T21:53:46.217] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T21:53:46.218] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:53:46.220] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:53:46.251] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:53:46.255] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T21:58:09.718] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:58:09.755] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T21:58:09.757] [INFO] logFile - GET /platform request
+[2020-01-25T21:58:09.759] [INFO] logFile - GET /business request
+[2020-01-25T21:58:09.766] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T21:58:09.771] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T21:58:09.804] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:58:09.812] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T21:58:09.813] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T21:58:09.826] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T21:58:09.827] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T21:58:09.831] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T21:58:09.837] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T21:58:09.857] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T21:59:43.175] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-25T21:59:59.891] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:00:01.063] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:00:01.065] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:00:01.066] [INFO] logFile - GET /business request
+[2020-01-25T22:00:01.066] [INFO] logFile - GET /platform request
+[2020-01-25T22:00:01.067] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:00:03.106] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:00:03.107] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:00:03.111] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:00:03.113] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:00:03.114] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:00:03.115] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:00:03.117] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:00:03.121] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:00:03.141] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:00:03.148] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T22:00:10.512] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:00:10.514] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:00:10.515] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:00:10.531] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:00:10.533] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:00:10.535] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:02:02.173] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-25T22:02:15.484] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:02:15.630] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:02:15.632] [INFO] logFile - GET /platform request
+[2020-01-25T22:02:15.633] [INFO] logFile - GET /business request
+[2020-01-25T22:02:15.634] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:02:15.635] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:02:16.466] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:02:16.472] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:02:16.474] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:02:16.475] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:02:16.476] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:02:16.478] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:02:16.486] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:02:16.492] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:02:16.518] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:02:16.527] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T22:02:20.439] [INFO] logFile - GET /assay request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:02:20.455] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:02:20.464] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:02:20.479] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:02:20.484] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:02:20.487] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:02:20.505] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:06:19.553] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-25T22:06:33.337] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:06:33.550] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:06:33.551] [INFO] logFile - GET /platform request
+[2020-01-25T22:06:33.552] [INFO] logFile - GET /business request
+[2020-01-25T22:06:33.553] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:06:33.554] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:06:35.884] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:06:35.887] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:06:35.891] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:06:35.895] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:06:35.897] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:06:35.901] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:06:35.905] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:06:35.914] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-25T22:06:35.935] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-25T22:06:35.946] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-25T22:06:42.894] [INFO] logFile - GET /assay request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:06:42.897] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:06:42.898] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:06:42.917] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-25T22:06:42.918] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:06:42.919] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:06:42.944] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:06:42.965] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:06:51.217] [INFO] logFile - GET /business request
+[2020-01-25T22:06:51.257] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:09:04.613] [INFO] logFile - GET /assay request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:09:04.616] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:09:04.619] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:09:04.623] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:09:04.694] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:09:04.705] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-25T22:09:04.711] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:09:04.714] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:09:24.031] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:09:24.055] [INFO] logFile - GET /platform request
+[2020-01-25T22:09:24.058] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-25T22:09:24.095] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:09:32.014] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article","exportValue":"Review Article|","platform":"Plate Reader XF"}
+[2020-01-25T22:09:32.034] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article' AND platform_fk = 'Plate Reader XF' AND product_export_value = 'Review Article|';
+[2020-01-25T22:09:32.063] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article', product_export_value = 'Review Article|', platform_fk = 'Plate Reader XF', product_cu_date = '2020/01/25 22:09:32', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-25T22:09:32.189] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:09:32.193] [INFO] logFile - GET /platform request
+[2020-01-25T22:09:32.207] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-25T22:09:32.212] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:09:57.853] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article","exportValue":"Review Article|","platform":"Real Time Cell Analysis XF"}
+[2020-01-25T22:09:57.881] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article' AND platform_fk = 'Real Time Cell Analysis XF' AND product_export_value = 'Review Article|';
+[2020-01-25T22:09:57.922] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article', product_export_value = 'Review Article|', platform_fk = 'Real Time Cell Analysis XF', product_cu_date = '2020/01/25 22:09:57', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-25T22:09:58.006] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:09:58.017] [INFO] logFile - GET /platform request
+[2020-01-25T22:09:58.029] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-25T22:09:58.038] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:10:12.824] [INFO] logFile - /platform/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:10:12.827] [INFO] logFile - GET /business request
+[2020-01-25T22:10:12.844] [INFO] logFile - selectPlatformByPage sql: SELECT platform_id, platform_value, platform_export_value, platform_business_fk FROM platform WHERE  1=1 ORDER BY platform_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM platform WHERE  1=1;
+[2020-01-25T22:10:12.846] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:10:34.609] [INFO] logFile - POST /platform request payload: {"value":"AAAA","exportValue":"sssss","business":"Cell Analysis XF"}
+[2020-01-25T22:10:34.634] [INFO] logFile - validatePlatform sql: SELECT COUNT(*) AS total FROM platform WHERE platform_value = 'AAAA' AND platform_export_value = 'sssss' AND platform_business_fk = 'Cell Analysis XF';
+[2020-01-25T22:10:34.653] [INFO] logFile - insertPlatform sql: INSERT INTO platform(platform_id, platform_value, platform_export_value, platform_business_fk, platform_cu_date, platform_cu_user) VALUES (NULL, 'AAAA', 'sssss', 'Cell Analysis XF', '2020/01/25 22:10:34', 'Ziqi.Liu@cognizant.com');
+[2020-01-25T22:10:34.717] [INFO] logFile - /platform/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:10:34.734] [INFO] logFile - GET /business request
+[2020-01-25T22:10:34.765] [INFO] logFile - selectPlatformByPage sql: SELECT platform_id, platform_value, platform_export_value, platform_business_fk FROM platform WHERE  1=1 ORDER BY platform_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM platform WHERE  1=1;
+[2020-01-25T22:10:34.772] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-25T22:10:40.925] [INFO] logFile - GET /assay request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:10:40.928] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:10:40.929] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:10:40.930] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:10:40.956] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-25T22:10:40.958] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:10:40.961] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:10:40.967] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:16:09.124] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:16:09.126] [INFO] logFile - GET /platform request
+[2020-01-25T22:16:09.145] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-25T22:16:09.146] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-25T22:16:11.451] [INFO] logFile - GET /assay request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:16:11.458] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-25T22:16:11.464] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-25T22:16:11.471] [INFO] logFile - GET /assay request payload: {}
+[2020-01-25T22:16:11.478] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-25T22:16:11.485] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-25T22:16:11.487] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-25T22:16:11.503] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-25T22:19:50.256] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:19:50.302] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T22:20:05.912] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:20:05.945] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T22:20:14.629] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:20:14.668] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T22:33:30.691] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:33:30.760] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T22:34:23.581] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:34:23.655] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-25T22:34:29.539] [INFO] logFile - /publication/export/endeca/push request
+[2020-01-25T22:34:52.425] [INFO] logFile - selectAllExportPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id ORDER BY publication_date DESC;
+[2020-01-25T22:34:53.333] [INFO] logFile - selectReasearchAreaExportValue sql: SELECT research_area_value, research_area_export FROM research_area;
+[2020-01-25T22:34:53.512] [INFO] logFile - selectProductExportValue sql: SELECT product_value, product_export_value, platform_fk FROM product;
+[2020-01-25T22:34:53.535] [INFO] logFile - selectAssayExportValue sql: SELECT assay_by_business_value, assay_by_business_export_value FROM assay_by_business;
+[2020-01-25T22:34:53.594] [INFO] logFile - selectPlatformExportValue sql: SELECT platform_value, platform_export_value FROM platform;
+[2020-01-25T22:42:34.181] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-25T22:42:34.386] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmhEbmhxUVF1NG5XSXhLci15X0UyTVc4X2ExTXhSODdKRk1LT2xKN0dJZkEiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTc5OTU5NDUwLCJleHAiOjE1Nzk5NjMwNTAsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.HhAoqcYFvTR90WLzUSEj6K8Y9vkiMH0j79uHf1fqbxxFh-Q08FikxRGeJPMPKdvQCqkmFIupFwATAXBFbh048DRUGYwFoxw3_kUvbXdcUVOexOJAj-DE3ZpoT8RUrQ4awM3SiditiZN0yqs4d-bBsvtX8syPYC33zzUH8IIh5dcgnNR-40g5qDae5YXgClkChOyukArk7Zt1qfOgC7O6cfNhKTNCbkbUE8VIfGYQ6PU2QV-LfmNfhu_Em4qGgr8XRHI7PHvd75_BfwyFgBp4EH-J6DB5VjrQ_21Z5_Oa2lxUKLMyvEqX12fbvYaBJGo9UBzrNje1rBtWlYIaDkWtxA',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.hDnhqQQu4nWIxKr-y_E2MW8_a1MxR87JFMKOlJ7GIfA',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1579959450,
+     exp: 1579963050,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }

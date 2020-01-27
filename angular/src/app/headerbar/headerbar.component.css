@@ -1,0 +1,29 @@
+.headerBar{
+  width: 100%;
+  height: 60px;
+  background: #0085d5;
+  position: absolute;
+  left:0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.agilent-logo{
+  height: 100%;
+  width: 190px;
+  background: url("../../assets/agilent-logo-white.png") no-repeat left center;
+  background-size: 190px;
+  margin-left: 50px;
+}
+.logout{
+  font-size: 18px;
+  color: white;
+  margin-right: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  /*background: url("../../assets/logout.png") no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  outline: none;*/
+}

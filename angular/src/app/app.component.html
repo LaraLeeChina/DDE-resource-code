@@ -1,0 +1,11 @@
+<div class="body-database">
+  <app-headerbar [isAuthenticated]="isAuthenticated" (onLogout)="logout()"></app-headerbar>
+  
+  <div class="app-cont-container">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <app-footerbar class="footer"></app-footerbar>
+</div>
+
+

@@ -1,0 +1,111 @@
+.insert-span{
+	width: 250px;
+	font-size: 15px;
+	color: black;
+	font-size: 20px;
+	margin-right: 20px;
+	height: 100%;
+	vertical-align: middle
+}
+.span-title{
+	font-size: 14px;
+}
+.update-div{
+	display: fixed;
+}
+.textArea-insert{
+	border-color: #CCCCCC;
+	width: 230px;
+}
+.textbox-insert{
+	width: 230px;
+	margin: 8px
+}
+.insert-wrapper{
+  width: 100%;
+  padding: 20px 50px;
+  /*overflow: scroll;*/
+  height: 100%;
+}
+label{
+  width: 180px;
+  font-size: 14px;
+}
+.btn-wrapper{
+  text-align: center;
+  margin-top: 38px;
+}
+.insertBtn{
+  border-radius: 4px;
+  background: #ff6358;
+  color: #fff;
+  width: 80px;
+  padding: 4px 0;
+  margin-right: 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+.insert-column-wrapper{
+  margin-top: 30px;
+}
+.btn-grid{
+  border-radius: 4px;
+  background: #ff6358;
+  color: #fff;
+  width: 56px;
+  margin-right: 25px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 0;
+}
+.back-insert { 
+  color: #0085d5;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.back-insert span {
+  cursor: pointer;
+}
+.button-notification {
+  padding: 10px 5px !important;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.k-notification-wrap {
+  align-items: center;
+}
+.dialog-button {
+  width: 50%;
+  padding: 12px 16px;
+  background: white;
+  border: 0;
+  color: #656565;
+  cursor:pointer;
+}
+.dialog-button-no:hover {
+  background: #E8EAEB;
+}
+.k-dialog-buttongroup {
+  border-top: 1px solid #DCDDDE;
+}
+.dialog-button-yes:hover {
+  background: #ff6358;
+  color: white;
+}
+.dialog-button-yes {
+  color: #ff6358;
+  border-left: 1px solid #DCDDDE;
+}
+
+.k-list-scroller{
+  max-height: 264px !important;
+}

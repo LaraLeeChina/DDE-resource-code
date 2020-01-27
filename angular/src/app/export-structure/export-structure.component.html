@@ -1,0 +1,16 @@
+
+<div class="modal-header">
+    <h4 class="modal-title pull-left">Export table structure</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+<select name="tableName" [(ngModel)]="tableName">
+    <option *ngFor="let table of tableList" value="{{table}}">{{table}}</option>
+</select>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" (click)="export()">export</button> 
+<button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

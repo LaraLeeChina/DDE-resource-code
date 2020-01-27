@@ -1,0 +1,16 @@
+<body *ngIf="!isAuthenticated">
+    <div class="login">
+        <div class="logintop">
+          <div class="login-logo"></div>
+          <div class="signin">
+            Log In
+          </div>
+          <div class="txt-rt tips" [hidden]="errMsgLoginFlag">
+            <small class="form-text font-red">{{errMsg}}</small>
+          </div>
+          <div class="clearfix">
+            <button class="btn btn-primary submitBtn" (click)="login()">LOG IN</button>
+          </div>            
+        </div>
+    </div>
+</body>

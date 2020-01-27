@@ -1,0 +1,30 @@
+.update-span{
+	width: 250px;
+	font-size: 15px;
+	color: black;
+	margin-right: 20px;
+	height: 100%;
+	vertical-align: middle
+}
+.span-title{
+	font-size: 20px;
+}
+.update-div{
+	display: fixed;
+}
+.textArea-update{
+	border-color: #CCCCCC;
+	width: 230px;
+}
+.btn{
+  background: #0085d5;
+  color: #ffff;
+}
+.modal-header{
+  background: #0085d5;
+  color: #ffff;
+  padding: 10px;
+}
+.close{
+  color: white;
+}

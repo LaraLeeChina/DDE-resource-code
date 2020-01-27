@@ -1,0 +1,49 @@
+
+<div class="modal-header">
+    <h4 class="modal-title pull-left">Create Table</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table style="width: 100%">
+    <tr style="width: 100%">
+        <td style="width: 50%">
+            <span  class="import-span">Table Name</span>
+        </td>
+        <td style="width: 50%">
+            <input kendoTextBox class="textbox-insert" [(ngModel)]="tableName" name="tableName"required autofocus>        
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span  class="import-span">Import way</span>
+        </td>
+        <td>
+            <input name="chooseImportWay" [(ngModel)]="chooseImportWay" (change)="changeway()" type="radio" value="file" />file
+            <input name="chooseImportWay" (change)="changeway()" [(ngModel)]="chooseImportWay" type="radio" value="form" />form
+        </td>
+    </tr>
+    
+
+    </table>
+    <div *ngIf="chooseImportWay=='file'">
+        <input type="file" (change)="uploadFile($event)" />
+    </div>
+    <div *ngIf="chooseImportWay=='form'">
+        <div class="form-group form-group-sm" *ngFor="let element of elements">
+            <label class="col-form-label">name</label>
+            <input class="form-control" [(ngModel)]="element.name" value="{{element.name}}">
+            <label class="col-form-label">type</label>
+            <input class="form-control" [(ngModel)]="element.type" value="{{element.type}}">
+            <label class="col-form-label">length</label>
+            <input class="form-control" [(ngModel)]="element.length" value="{{element.length}}">
+            <button class="btn btn-link" (click)="removeInput(i)">Remove</button>
+        </div>
+        <button class="btn btn-link" (click)="addInput()">Add</button>
+    </div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" (click)="import()">import</button> 
+<button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

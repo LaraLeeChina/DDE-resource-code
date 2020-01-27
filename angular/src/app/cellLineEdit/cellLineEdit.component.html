@@ -1,0 +1,361 @@
+<div class="edit">
+    <div class="back" ><div class="insertBtn insert-btn" (click)="goBack()">{{backText}}</div></div>
+    <div class="select">
+        <kendo-dropdownlist 
+            [data]="editList"
+            [value]="editName"
+            (valueChange)="editChange()"
+            [(ngModel)]="editName"
+            style="width: 220px;"
+        >
+        <ng-template kendoDropDownListItemTemplate let-dataItem>
+            <span class="template" style="height: 14px; line-height: 14px;">{{ dataItem }}</span> 
+        </ng-template>
+        </kendo-dropdownlist>
+        <!-- <select name="editList" [(ngModel)]="editName" (ngModelChange)="editChange()">
+            <option *ngFor="let item of editList" value="{{item}}">{{item}}</option>
+        </select> -->
+        <!-- <p>
+            Edit {{editName}}
+        </p> -->
+    </div>
+    <div class="content">
+        <kendo-grid 
+            [data]="gridView" 
+            [skip]="state.skip" 
+            [pageSize]="state.take" 
+            [pageable]="true" 
+            [filter]="state.filter" 
+            [filterable]="true"
+            [height]="getWinH()" 
+            [scrollable]="scrollable" 
+            (pageChange)="pageChange($event)" 
+            (cellClose)="cellCloseHandler($event)"
+            (cellClick)="cellClickHandler($event)" 
+            (add)="addHandler($event)" 
+            (remove)="removeHandler($event)" 
+            (save)="saveHandler($event)"
+            (cancel)="cancelHandler($event)"
+            (filterChange)="filterChange($event)"
+            style="width: 800px"
+            (selectedKeysChange)="onSelectedKeysChange($event)"
+            (edit)="editHandler($event)"> 
+
+            <ng-template kendoGridToolbarTemplate>
+                <div class="grid-toolbar-con">
+                    <button kendoGridAddCommand type="button" class="insertBtn addBtn">Add Row</button>
+                    <div class="grid-toolbar-title">{{editName}}</div>
+                </div>
+            </ng-template>
+
+            <div *ngIf="editName != 'Manage Cell Line' && editName != 'Assay' && editName != 'Assay By Business' && editName != 'Assay PNs By Product' && editName != 'Instrument By Platform' && editName != 'Business & Platform'">
+                <kendo-grid-column *ngFor="let col of columnNames;let i = index" [field]="getField(i)" editor="string" [title]="col" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>            
+
+            <div *ngIf="editName == 'Manage Cell Line'">
+                <kendo-grid-column field="value" title="Cell Line" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="cellTypes" title="Cell Type" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="cellTypeList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('cellTypes')">
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>
+
+            <!--<div *ngIf="editName == 'Assay'">
+                <kendo-grid-column field="value" title="Assay" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="business" title="Business" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>    
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="businessList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('business')"
+                                            (valueChange)="changeBusiness($event)"
+                                            >
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="product" title="Product" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="productList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('product')"
+                                            >                      
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="part" title="Part" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="partList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('part')">
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="exportValue" title="Export value" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>-->
+
+            <div *ngIf="editName == 'Assay By Business'">
+                <kendo-grid-column field="business" title="Business" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>    
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="businessList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('business')"
+                                            >
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="value" title="Assay" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+                
+                <kendo-grid-column field="exportValue" title="Export Link" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>
+
+            <div *ngIf="editName == 'Assay PNs By Product'">
+                <kendo-grid-column field="product" title="Product" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>    
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="productList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('product')"
+                                            >
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="value" title="Assay" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="assayList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('value')"
+                                            >
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="part" title="Part" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="partList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('part')"
+                                            >
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>
+
+            <div *ngIf="editName == 'Product by Platform'">
+                <kendo-grid-column field="platform" title="Analysis Platform" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="platfromList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('platform')">
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="value" title="Product" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="exportValue" title="Export Link" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>
+
+            <div *ngIf="editName == 'Business & Platform'">
+                <kendo-grid-column field="business" title="Business" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                    <ng-template kendoGridEditTemplate  let-dataItem let-rowIndex="rowIndex" >
+                        <kendo-dropdownlist [data]="businessList"
+                                            [textField]="'value'"
+                                            [valueField]="'key'"
+                                            [formControl]="subFormModel.get('business')">
+                        </kendo-dropdownlist>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="value" title="Analysis Platform" width="250" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+                <kendo-grid-column field="exportValue" title="Analysis Platform Display Value" [style]="{'border':1,'text-align': 'center'}"
+                [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
+                    <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+                        <kendo-grid-string-filter-cell
+                        [showOperators]="false"
+                        [column]="column"
+                        [filter]="filter">
+                        </kendo-grid-string-filter-cell>
+                    </ng-template>
+                </kendo-grid-column>
+            </div>
+
+            <kendo-grid-command-column title="Command" width="200" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"
+                [style]="{'border':1,'text-align': 'center'}">
+                <ng-template kendoGridCellTemplate let-isNew="isNew">
+                    <div kendoGridEditCommand class="btn-grid" *ngIf="editName == 'Assay'">Edit</div>
+                    <div kendoGridRemoveCommand class="btn-grid">Remove</div>
+                    <button kendoGridSaveCommand class="btn-grid">{{ isNew ? 'Add' : 'Save' }}</button>
+                    <button kendoGridCancelCommand class="btn-grid">{{ isNew ? 'Cancel' : 'Cancel' }}</button>
+                </ng-template>
+            </kendo-grid-command-column>
+        </kendo-grid>
+    </div>
+</div>

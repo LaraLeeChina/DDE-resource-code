@@ -1,0 +1,87 @@
+.btn-update{
+    text-decoration:none;
+	background:#2f435e;
+	color:#f2f2f2;
+	padding: 5px 15px 5px 15px;
+	font-size:12px;
+	font-weight:bold;
+	border-radius:3px;
+	-webkit-transition:all linear 0.30s;
+	-moz-transition:all linear 0.30s;
+	transition:all linear 0.30s;
+}
+.btn-delete{
+    text-decoration:none;
+	background:#07090c;
+	color:#f2f2f2;
+	padding: 5px 15px 5px 15px;
+	font-size:12px;
+	font-weight:bold;
+	border-radius:3px;
+	-webkit-transition:all linear 0.30s;
+	-moz-transition:all linear 0.30s;
+	transition:all linear 0.30s;
+}
+table.imagetable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+    text-align: center !important;
+    margin: 0 auto;
+}
+table.imagetable th {
+	width: 10%;
+    background:#b5cfd2 ;
+    border-width: 1px;
+	padding: 8px;
+	text-align: center !important;
+    border-style: solid;
+    border-color: #999999;
+}
+.table td {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.table-responsive{
+	display: fixed;
+	flex-direction: column;
+	background: #FBFBFB;
+}
+tr .myClass {
+	border:0;
+
+}
+tr .myClass:hover{
+	background: #E3F2FA;
+}
+.btn-grid{
+  border-radius: 4px;
+  background: #ff6358;
+  color: #fff;
+  width: 56px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 0;
+}
+.table-responsive .k-grid td{
+  font-size: 12px;
+}
+.k-widget{
+  font-size: 12px !important;
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40em;
+  text-align: center;
+  font-size: 14px;
+  background: url("https://www.agilent.com/login/assets/images/loader.gif") no-repeat center rgba(255,255,255,0.8);
+}

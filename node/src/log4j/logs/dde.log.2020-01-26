@@ -1,0 +1,399 @@
+[2020-01-26T16:56:41.035] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-26T16:58:27.390] [INFO] logFile - /login request request
+[2020-01-26T16:58:29.834] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-26T16:58:32.091] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:58:32.137] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-26T16:58:42.692] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T16:58:42.730] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T16:58:42.743] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T16:58:42.745] [INFO] logFile - GET /platform request
+[2020-01-26T16:58:42.749] [INFO] logFile - GET /business request
+[2020-01-26T16:58:42.756] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T16:58:42.760] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T16:58:42.767] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T16:58:42.770] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:58:42.774] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T16:58:42.809] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T16:58:42.817] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T16:58:42.819] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T16:58:42.826] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T16:58:42.830] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T16:58:42.832] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T16:58:50.082] [INFO] logFile - /celltypes/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:58:50.163] [INFO] logFile - selectCellTypesByPage sql: SELECT cell_types_id, cell_types_value FROM cell_types  ORDER BY cell_types_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_types ;
+[2020-01-26T16:58:53.717] [INFO] logFile - /species/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:58:53.753] [INFO] logFile - selectSpeciesByPage sql: SELECT species_id, species_value FROM species  ORDER BY species_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM species ;
+[2020-01-26T16:58:56.279] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:58:56.283] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T16:58:56.286] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T16:58:56.288] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T16:58:56.305] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T16:58:56.306] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T16:58:56.307] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T16:58:56.309] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T16:59:27.533] [INFO] logFile - /celltypes/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:59:27.552] [INFO] logFile - selectCellTypesByPage sql: SELECT cell_types_id, cell_types_value FROM cell_types  ORDER BY cell_types_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_types ;
+[2020-01-26T16:59:30.215] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:59:30.217] [INFO] logFile - GET /platform request
+[2020-01-26T16:59:30.248] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T16:59:30.255] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T16:59:34.440] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:59:34.451] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T16:59:34.452] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T16:59:34.453] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T16:59:34.492] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T16:59:34.499] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T16:59:34.500] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T16:59:34.502] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T16:59:47.893] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:59:47.900] [INFO] logFile - GET /business request
+[2020-01-26T16:59:47.919] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T16:59:47.921] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T16:59:57.737] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T16:59:57.739] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T16:59:57.740] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T16:59:57.742] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T16:59:57.761] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T16:59:57.762] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T16:59:57.763] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T16:59:57.773] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:20.278] [INFO] logFile - POST /assayPnsByProduct request payload: {"value":"Cell Energy Phenotype Test","product":"Soluble Sensor-96 Well","part":"103010-100~103707-100"}
+[2020-01-26T17:00:20.304] [INFO] logFile - validateAssayPnsByProduct sql: SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE assay_pns_by_product_value = 'Cell Energy Phenotype Test' AND assay_pns_by_product_fk = 'Soluble Sensor-96 Well' AND assay_pns_by_product_part_fk  = '103010-100~103707-100';
+[2020-01-26T17:00:20.339] [INFO] logFile - insertAssayPnsByProduct sql: INSERT INTO assay_pns_by_product(assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk, assay_pns_by_product_cu_date, assay_pns_by_product_cu_user) VALUES (NULL, 'Cell Energy Phenotype Test', 'Soluble Sensor-96 Well', '103010-100~103707-100', '2020/01/26 17:00:20', 'Ziqi.Liu@cognizant.com');
+[2020-01-26T17:00:20.505] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:00:20.536] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:20.541] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:20.543] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:20.544] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:20.566] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:20.567] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:00:20.576] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:28.867] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"2","offset":"25"}
+[2020-01-26T17:00:28.873] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:28.889] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 25, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:28.901] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:28.903] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:28.904] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:28.921] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:00:28.922] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:42.029] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:00:42.038] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:42.040] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:42.041] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:42.053] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:42.056] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:00:42.057] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:42.066] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:46.824] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"2","offset":"25"}
+[2020-01-26T17:00:46.827] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:46.829] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:46.830] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:46.847] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 25, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:46.852] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:46.853] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:46.855] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:00:51.077] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:00:51.085] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:51.087] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:51.090] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:51.103] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:51.104] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:00:51.105] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:51.113] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:54.471] [INFO] logFile - DELETE /assayPnsByProduct request payload: {"id":"36"}
+[2020-01-26T17:00:54.628] [INFO] logFile - deleteAssayPnsByProduct sql: DELETE FROM assay_pns_by_product WHERE assay_pns_by_product_id = 36;
+[2020-01-26T17:00:54.728] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:00:54.744] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:00:54.746] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:00:54.747] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:00:54.750] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:00:54.764] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:00:54.768] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:00:54.769] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:01:10.978] [INFO] logFile - POST /assayPnsByProduct request payload: {"value":"Not Specified","product":"Review Article","part":"102720-100"}
+[2020-01-26T17:01:10.998] [INFO] logFile - validateAssayPnsByProduct sql: SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE assay_pns_by_product_value = 'Not Specified' AND assay_pns_by_product_fk = 'Review Article' AND assay_pns_by_product_part_fk  = '102720-100';
+[2020-01-26T17:01:11.020] [INFO] logFile - insertAssayPnsByProduct sql: INSERT INTO assay_pns_by_product(assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk, assay_pns_by_product_cu_date, assay_pns_by_product_cu_user) VALUES (NULL, 'Not Specified', 'Review Article', '102720-100', '2020/01/26 17:01:10', 'Ziqi.Liu@cognizant.com');
+[2020-01-26T17:01:11.102] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:01:11.108] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:01:11.110] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:01:11.111] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:01:11.122] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:01:11.128] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:01:11.134] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:01:11.141] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:01:25.275] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:01:25.276] [INFO] logFile - GET /business request
+[2020-01-26T17:01:25.301] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:01:25.311] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:03:09.184] [INFO] logFile - POST /assayByBusiness request payload: {"value":"aaa","exportValue":"bbb","business":"Cell Analysis XF"}
+[2020-01-26T17:03:09.205] [INFO] logFile - validateAssayByBusiness sql: SELECT COUNT(*) AS total FROM assay_by_business WHERE assay_by_business_value = 'aaa' AND assay_by_business_export_value = 'bbb' AND assay_by_business_fk = 'Cell Analysis XF';
+[2020-01-26T17:03:09.226] [INFO] logFile - insertAssayByBusiness sql: INSERT INTO assay_by_business(assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk, assay_by_business_cu_date, assay_by_business_cu_user) VALUES (NULL, 'aaa', 'bbb', 'Cell Analysis XF', '2020/01/26 17:03:09', 'Ziqi.Liu@cognizant.com');
+[2020-01-26T17:03:09.349] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:03:09.354] [INFO] logFile - GET /business request
+[2020-01-26T17:03:09.375] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:03:09.377] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:03:11.910] [INFO] logFile - DELETE /assayByBusiness request payload: {"id":"25"}
+[2020-01-26T17:03:11.940] [INFO] logFile - deleteAssayByBusiness sql: DELETE FROM assay_by_business WHERE assay_by_business_id = 25;
+[2020-01-26T17:03:12.279] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:03:12.288] [INFO] logFile - GET /business request
+[2020-01-26T17:03:12.301] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:03:12.316] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:03:21.396] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:03:21.397] [INFO] logFile - GET /platform request
+[2020-01-26T17:03:21.420] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:03:21.426] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:15:13.819] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:15:13.931] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T17:25:11.155] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:11.241] [INFO] logFile - GET /platform request
+[2020-01-26T17:25:11.266] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:25:11.283] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:25:14.711] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:14.714] [INFO] logFile - GET /business request
+[2020-01-26T17:25:14.735] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:25:14.750] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:25:26.924] [INFO] logFile - PUT /assayByBusiness request payload: {"id":1,"value":"Basal Metabolic Assay","exportValue":"Basal Metabolic Assay|","business":"A Business"}
+[2020-01-26T17:25:26.952] [INFO] logFile - validateAssayByBusiness sql: SELECT COUNT(*) AS total FROM assay_by_business WHERE assay_by_business_value = 'Basal Metabolic Assay' AND assay_by_business_export_value = 'Basal Metabolic Assay|' AND assay_by_business_fk = 'A Business';
+[2020-01-26T17:25:26.983] [INFO] logFile - updateAassayByBusiness sql: UPDATE assay_by_business SET assay_by_business_value = 'Basal Metabolic Assay', assay_by_business_export_value = 'Basal Metabolic Assay|', assay_by_business_fk = 'A Business', assay_by_business_cu_date = '2020/01/26 17:25:26', assay_by_business_cu_user = 'Ziqi.Liu@cognizant.com' WHERE assay_by_business_id = 1;
+[2020-01-26T17:25:27.074] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:27.075] [INFO] logFile - GET /business request
+[2020-01-26T17:25:27.102] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:25:27.103] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:25:32.017] [INFO] logFile - PUT /assayByBusiness request payload: {"id":1,"value":"Basal Metabolic Assay1","exportValue":"Basal Metabolic Assay|","business":"A Business"}
+[2020-01-26T17:25:32.050] [INFO] logFile - validateAssayByBusiness sql: SELECT COUNT(*) AS total FROM assay_by_business WHERE assay_by_business_value = 'Basal Metabolic Assay1' AND assay_by_business_export_value = 'Basal Metabolic Assay|' AND assay_by_business_fk = 'A Business';
+[2020-01-26T17:25:32.080] [INFO] logFile - updateAassayByBusiness sql: UPDATE assay_by_business SET assay_by_business_value = 'Basal Metabolic Assay1', assay_by_business_export_value = 'Basal Metabolic Assay|', assay_by_business_fk = 'A Business', assay_by_business_cu_date = '2020/01/26 17:25:32', assay_by_business_cu_user = 'Ziqi.Liu@cognizant.com' WHERE assay_by_business_id = 1;
+[2020-01-26T17:25:32.143] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:32.146] [INFO] logFile - GET /business request
+[2020-01-26T17:25:32.166] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:25:32.169] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:25:36.644] [INFO] logFile - PUT /assayByBusiness request payload: {"id":1,"value":"Basal Metabolic Assay","exportValue":"Basal Metabolic Assay|","business":"A Business"}
+[2020-01-26T17:25:36.664] [INFO] logFile - validateAssayByBusiness sql: SELECT COUNT(*) AS total FROM assay_by_business WHERE assay_by_business_value = 'Basal Metabolic Assay' AND assay_by_business_export_value = 'Basal Metabolic Assay|' AND assay_by_business_fk = 'A Business';
+[2020-01-26T17:25:36.685] [INFO] logFile - updateAassayByBusiness sql: UPDATE assay_by_business SET assay_by_business_value = 'Basal Metabolic Assay', assay_by_business_export_value = 'Basal Metabolic Assay|', assay_by_business_fk = 'A Business', assay_by_business_cu_date = '2020/01/26 17:25:36', assay_by_business_cu_user = 'Ziqi.Liu@cognizant.com' WHERE assay_by_business_id = 1;
+[2020-01-26T17:25:36.742] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:36.744] [INFO] logFile - GET /business request
+[2020-01-26T17:25:36.768] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-26T17:25:36.769] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:25:40.616] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:40.627] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:25:40.632] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:25:40.646] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:25:40.655] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:25:40.657] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:25:40.659] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:25:40.674] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:25:44.659] [INFO] logFile - PUT /assayPnsByProduct request payload: {"id":44,"value":"Cell Energy Phenotype Test","product":"Review Article","part":"103325-100"}
+[2020-01-26T17:25:44.687] [INFO] logFile - validateAssayPnsByProduct sql: SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE assay_pns_by_product_value = 'Cell Energy Phenotype Test' AND assay_pns_by_product_fk = 'Review Article' AND assay_pns_by_product_part_fk  = '103325-100';
+[2020-01-26T17:25:44.722] [INFO] logFile - updateAssayPnsByProduct sql: UPDATE assay_pns_by_product SET assay_pns_by_product_value = 'Cell Energy Phenotype Test', assay_pns_by_product_fk = 'Review Article', assay_pns_by_product_part_fk = '103325-100', assay_pns_by_product_cu_date = '2020/01/26 17:25:44', assay_pns_by_product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE assay_pns_by_product_id = 44;
+[2020-01-26T17:25:44.789] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:44.794] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:25:44.803] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:25:44.807] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:25:44.813] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:25:44.816] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:25:44.844] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:25:45.054] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:25:50.165] [INFO] logFile - PUT /assayPnsByProduct request payload: {"id":44,"value":"Cell Energy Phenotype Test","product":"Review Article","part":"103015-100~103708-100"}
+[2020-01-26T17:25:50.191] [INFO] logFile - validateAssayPnsByProduct sql: SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE assay_pns_by_product_value = 'Cell Energy Phenotype Test' AND assay_pns_by_product_fk = 'Review Article' AND assay_pns_by_product_part_fk  = '103015-100~103708-100';
+[2020-01-26T17:25:50.213] [INFO] logFile - updateAssayPnsByProduct sql: UPDATE assay_pns_by_product SET assay_pns_by_product_value = 'Cell Energy Phenotype Test', assay_pns_by_product_fk = 'Review Article', assay_pns_by_product_part_fk = '103015-100~103708-100', assay_pns_by_product_cu_date = '2020/01/26 17:25:50', assay_pns_by_product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE assay_pns_by_product_id = 44;
+[2020-01-26T17:25:50.298] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:50.301] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:25:50.302] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:25:50.304] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:25:50.318] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:25:50.321] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-26T17:25:50.324] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:25:50.326] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:25:54.012] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:54.013] [INFO] logFile - GET /platform request
+[2020-01-26T17:25:54.041] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:25:54.045] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:25:58.656] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article","exportValue":"Review Article|","platform":"AAAA"}
+[2020-01-26T17:25:58.699] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article' AND platform_fk = 'AAAA' AND product_export_value = 'Review Article|';
+[2020-01-26T17:25:58.731] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article', product_export_value = 'Review Article|', platform_fk = 'AAAA', product_cu_date = '2020/01/26 17:25:58', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-26T17:25:58.779] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:25:58.782] [INFO] logFile - GET /platform request
+[2020-01-26T17:25:58.800] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:25:58.807] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:26:03.760] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article","exportValue":"Review Article|","platform":"Plate Reader XF"}
+[2020-01-26T17:26:03.793] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article' AND platform_fk = 'Plate Reader XF' AND product_export_value = 'Review Article|';
+[2020-01-26T17:26:03.813] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article', product_export_value = 'Review Article|', platform_fk = 'Plate Reader XF', product_cu_date = '2020/01/26 17:26:03', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-26T17:26:03.847] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:26:03.860] [INFO] logFile - GET /platform request
+[2020-01-26T17:26:03.868] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:26:03.884] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:26:07.686] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article1","exportValue":"Review Article|","platform":"Plate Reader XF"}
+[2020-01-26T17:26:07.707] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article1' AND platform_fk = 'Plate Reader XF' AND product_export_value = 'Review Article|';
+[2020-01-26T17:26:07.735] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article1', product_export_value = 'Review Article|', platform_fk = 'Plate Reader XF', product_cu_date = '2020/01/26 17:26:07', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-26T17:26:07.798] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:26:07.799] [INFO] logFile - GET /platform request
+[2020-01-26T17:26:07.828] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:26:07.830] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:26:12.649] [INFO] logFile - PUT /product request payload: {"id":3,"value":"Review Article","exportValue":"Review Article|","platform":"Plate Reader XF"}
+[2020-01-26T17:26:12.674] [INFO] logFile - validateProduct sql: SELECT COUNT(*) AS total FROM product WHERE product_value = 'Review Article' AND platform_fk = 'Plate Reader XF' AND product_export_value = 'Review Article|';
+[2020-01-26T17:26:12.696] [INFO] logFile - updateProduct sql: UPDATE product SET product_value = 'Review Article', product_export_value = 'Review Article|', platform_fk = 'Plate Reader XF', product_cu_date = '2020/01/26 17:26:12', product_cu_user = 'Ziqi.Liu@cognizant.com' WHERE product_id = 3;
+[2020-01-26T17:26:12.733] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:26:12.738] [INFO] logFile - GET /platform request
+[2020-01-26T17:26:12.750] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-26T17:26:12.758] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:39:48.261] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T17:39:48.338] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:39:48.339] [INFO] logFile - GET /platform request
+[2020-01-26T17:39:48.342] [INFO] logFile - GET /business request
+[2020-01-26T17:39:48.344] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:39:48.347] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:39:48.412] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:39:48.415] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:39:48.419] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T17:39:48.476] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T17:39:48.479] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:39:48.480] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:39:48.482] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:39:48.485] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T17:39:48.510] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T17:39:48.515] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T17:48:52.686] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T17:48:57.144] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T17:48:57.153] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T17:48:57.154] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T17:48:57.156] [INFO] logFile - GET /business request
+[2020-01-26T17:48:57.160] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T17:48:57.185] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T17:48:57.292] [INFO] logFile - GET /platform request
+[2020-01-26T17:48:57.297] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T17:48:57.450] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T17:48:57.452] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T17:48:57.467] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T17:48:57.516] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T17:48:57.537] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T17:48:57.546] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T17:48:57.556] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T18:10:05.232] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:10:05.326] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULl82MVpTYUNwVk95X2NaUHVsMGNOb3RVbk9HZi1MSzI0MHMtcVlPelY2T3MiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTgwMDI5MTA1LCJleHAiOjE1ODAwMzI3MDUsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.J8ghlI1rWB2axv9nq0sZgOUxg5Seor5e0wsA8dUTa2oe8pQSghri4ZwA6j8rQ_4IvB4BkNYTb4_6zfDCUyz6hdFQCJLcOW7Y8te1pDUKlrWmpfClYQ64aY4OjClRH1wDg8CBB9HH2dwrjAZb2aCXXqfBNUT1Dh-fxnnNDoftIZEpRBvANB2o5bDbBD18G1U1tf0l7wJ18JfCJ4KrGc5oZsOuNoGOc1MLnmO_3QRJXaQrFBTZXAVUd2w3rO-N_whZY6uVeKvUguB3cqVuUv6-7XQRv9rcxiMqLTzQ-eaHks0W0VDtYGi4UCCorIhQlqrHjN_QFO6VDI9CRSZwH6Nv7w',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT._61ZSaCpVOy_cZPul0cNotUnOGf-LK240s-qYOzV6Os',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1580029105,
+     exp: 1580032705,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-26T18:10:05.513] [INFO] logFile - GET /platform request
+[2020-01-26T18:10:05.515] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULl82MVpTYUNwVk95X2NaUHVsMGNOb3RVbk9HZi1MSzI0MHMtcVlPelY2T3MiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTgwMDI5MTA1LCJleHAiOjE1ODAwMzI3MDUsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.J8ghlI1rWB2axv9nq0sZgOUxg5Seor5e0wsA8dUTa2oe8pQSghri4ZwA6j8rQ_4IvB4BkNYTb4_6zfDCUyz6hdFQCJLcOW7Y8te1pDUKlrWmpfClYQ64aY4OjClRH1wDg8CBB9HH2dwrjAZb2aCXXqfBNUT1Dh-fxnnNDoftIZEpRBvANB2o5bDbBD18G1U1tf0l7wJ18JfCJ4KrGc5oZsOuNoGOc1MLnmO_3QRJXaQrFBTZXAVUd2w3rO-N_whZY6uVeKvUguB3cqVuUv6-7XQRv9rcxiMqLTzQ-eaHks0W0VDtYGi4UCCorIhQlqrHjN_QFO6VDI9CRSZwH6Nv7w',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT._61ZSaCpVOy_cZPul0cNotUnOGf-LK240s-qYOzV6Os',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1580029105,
+     exp: 1580032705,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-26T18:17:27.810] [INFO] logFile - /login request request
+[2020-01-26T18:17:29.197] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-26T18:17:30.941] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:17:31.012] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-26T18:17:37.556] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:17:37.564] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T18:17:37.567] [INFO] logFile - GET /platform request
+[2020-01-26T18:17:37.575] [INFO] logFile - GET /business request
+[2020-01-26T18:17:37.581] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T18:17:37.591] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T18:17:37.595] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T18:17:37.606] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:17:37.630] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T18:17:37.633] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T18:17:37.636] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:17:37.652] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:17:37.654] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T18:17:37.655] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T18:17:37.684] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:17:37.693] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T18:17:40.691] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:17:40.714] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:20:06.728] [INFO] logFile - /cellseedingdensity/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:20:06.830] [INFO] logFile - selectCellSeedingDensityByPage sql: SELECT cell_sd_id, cell_sd_value FROM cell_seeding_density  ORDER BY cell_sd_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_seeding_density ;
+[2020-01-26T18:20:08.948] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:20:08.976] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:20:17.978] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:20:17.983] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:20:18.004] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:20:18.011] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T18:20:20.741] [INFO] logFile - /species/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:20:20.781] [INFO] logFile - selectSpeciesByPage sql: SELECT species_id, species_value FROM species  ORDER BY species_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM species ;
+[2020-01-26T18:24:49.503] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:24:49.580] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T18:24:49.584] [INFO] logFile - GET /platform request
+[2020-01-26T18:24:49.588] [INFO] logFile - GET /business request
+[2020-01-26T18:24:49.592] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T18:24:49.593] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T18:24:49.629] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T18:24:49.645] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:24:49.664] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T18:24:49.673] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T18:24:49.674] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T18:24:49.680] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T18:24:49.689] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:24:49.690] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:24:49.740] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T18:24:49.746] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:30:38.612] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:30:38.716] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:31:11.970] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:31:12.045] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-26T18:31:12.050] [INFO] logFile - GET /platform request
+[2020-01-26T18:31:12.052] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-26T18:31:12.056] [INFO] logFile - GET /business request
+[2020-01-26T18:31:12.059] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-26T18:31:12.132] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:31:12.156] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-26T18:31:12.161] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-26T18:31:12.176] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-26T18:31:12.180] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-26T18:31:12.183] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-26T18:31:12.188] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-26T18:31:12.190] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:31:12.214] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-26T18:31:12.253] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-26T18:32:03.353] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:32:03.381] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:32:08.185] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25","value":"asas"}
+[2020-01-26T18:32:08.212] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part WHERE part_value LIKE '%asas%' ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part WHERE part_value LIKE '%asas%';
+[2020-01-26T18:32:10.517] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:32:10.546] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:32:18.664] [INFO] logFile - POST /part request payload: {"value":"dd"}
+[2020-01-26T18:32:18.701] [INFO] logFile - insertPart sql: INSERT INTO part(part_id, part_value, part_cu_date, part_cu_user) VALUES (NULL, 'dd', '2020/01/26 18:32:18', 'Ziqi.Liu@cognizant.com');
+[2020-01-26T18:32:18.840] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:32:18.861] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;
+[2020-01-26T18:32:22.580] [INFO] logFile - DELETE /part request payload: {"key":"37"}
+[2020-01-26T18:32:22.630] [INFO] logFile - deletePart sql: DELETE FROM part WHERE part_id = 37;
+[2020-01-26T18:32:22.736] [INFO] logFile - /part/page request payload: {"index":"1","offset":"25"}
+[2020-01-26T18:32:22.753] [INFO] logFile - selectPartByPage sql: SELECT part_id, part_value FROM part  ORDER BY part_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM part ;

@@ -1,0 +1,25 @@
+
+<div class="modal-header">
+   <span class="span-title">Edit information</span>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table>
+        <tr  *ngFor="let column_name of column_names">
+            <td>
+                <span  class="update-span">{{column_name}}</span>
+            </td>
+            <td>
+                <input kendoTextBox style="width: 230px" [(ngModel)]="column_values[column_name]" *ngIf="column_values[column_name]==null||column_values[column_name].length<32" name="{{column_name}}"required autofocus>
+                <textarea kendoTextArea class="textArea-update" *ngIf="column_values[column_name]!=null&&column_values[column_name].length>32" [(ngModel)]="column_values[column_name]"></textarea>
+            </td>
+        </tr>
+
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="update()">Edit</button>
+    <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+</div>

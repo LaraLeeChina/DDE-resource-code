@@ -1,0 +1,47 @@
+<div class="table-responsive">
+    <kendo-grid
+    [data]="gridView"
+    [pageSize]="state.take"
+    [skip]="state.skip"
+    [sort]="state.sort"
+    [sortable]="true"
+    [filterable]="true"
+    [filter]="state.filter"
+    [selectable]="{enabled: true, checkboxOnly: true }"
+    [pageable]="true"
+    [height]="getWinH()"
+    [scrollable]="scrollable"
+    [kendoGridSelectBy]="'Index'"
+    [selectedKeys]="mySelection"
+    (pageChange)="pageChange($event)"
+    (edit)="edit($event)"
+    (sortChange)="sortChange($event)"
+    (remove)="removeHandler($event)"
+    (filterChange)="filterChange($event)"
+    (dataStateChange)="dataStateChange($event)"
+    (cellClose)="cellCloseHandler($event)"
+    (cellClick)="cellClickHandler($event)"
+    (selectedKeysChange)="onSelectedKeysChange($event)"
+    >
+      <kendo-grid-column *ngFor="let col of column_names"  [field]="col" editor="string" [title]="col == 'Create/Update Date' ? 'Last Modify Date' : (col == 'Platform' ? 'Analysis Platform' : col)" width="160" [style]="{'border':1,'text-align': 'center'}" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}" >
+        <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+          <kendo-grid-string-filter-cell
+            [showOperators]="false"
+            [column]="column"
+            [filter]="filter">
+          </kendo-grid-string-filter-cell>
+        </ng-template>
+      </kendo-grid-column>
+      <kendo-grid-command-column title="Command" width="150" [locked]="true" [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}"  [style]="{'border':'1', 'text-align': 'center'}">
+        <ng-template kendoGridCellTemplate let-isNew="isNew" >
+            <div kendoGridEditCommand class="btn-grid">Edit</div>
+            <div kendoGridRemoveCommand class="btn-grid">Remove</div>
+        </ng-template>
+      </kendo-grid-command-column >
+    </kendo-grid>
+    <div class="loading" *ngIf="loading">
+      <span>&nbsp;&nbsp;please wait...</span>
+    </div>
+</div>
+
+

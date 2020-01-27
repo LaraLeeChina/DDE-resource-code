@@ -1,0 +1,22 @@
+
+<div class= 'body'>
+    <div class="modal-header">
+        <h3>Import</h3>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form  enctype="multipart/form-data" id="contact" >
+            <input type="file" (change)="uploadFile($event)" />
+        </form>
+    </div>
+    <div class="modal-error"  *ngIf="errorMessage">
+        <div>{{errorMessage}}</div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default" name="submit" (click) = fileUpload()>Import</button>
+        <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">{{closeBtnName}}</button>
+    </div>
+</div>
+

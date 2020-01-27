@@ -1,0 +1,52 @@
+.agilent-logo{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.span-title-home{
+  background: url("../../assets/home.png") no-repeat;
+  background-size: 20px;
+  padding-left: 28px;
+}
+.span-title-table{
+  background: url("../../assets/data.png") no-repeat;
+  background-size: 18px;
+  padding-left: 28px;
+}
+.span-title-setting{
+  background: url("../../assets/setting.png") no-repeat;
+  background-size: 18px;
+  padding-left: 28px;
+}
+.agilent-logo img{
+  width: 100%;
+}
+.btn-table{
+    border: 0ch;
+    width: 100%;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.btn-table:hover{
+    background: #0085D5;
+}
+.databaseTable{
+    width: 100%;
+}
+.div-show-table{
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 20px;
+    background:#2C343D;
+    color: white;
+}
+.span-title{
+    font-size: 15px;
+    color: white;
+    padding-bottom: 7px;
+
+}

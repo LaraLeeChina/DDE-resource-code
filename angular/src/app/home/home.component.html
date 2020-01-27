@@ -1,0 +1,14 @@
+<div class="body-database">
+  <div class="div-container">
+    <div class="div-row">
+      <div class="div-tablename">
+          <app-show-table #showTable (outChildMsg)= "getChildMsg($event)"></app-show-table>
+      </div>
+      <div class="div-detail">
+        <app-header [tableName]=tablename (outChildMsg)= "getSearchContent($event)"></app-header>
+        <div class="filter-tips">To filter, type text into the desired blank column field. Export will capture the filtered results records.</div>
+        <app-product #product [tableName]=tablename (outChildMsg) = "getOperationTable($event)"></app-product>
+      </div>
+    </div>
+  </div>
+</div>
