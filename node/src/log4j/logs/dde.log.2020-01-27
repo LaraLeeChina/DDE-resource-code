@@ -1,0 +1,62 @@
+[2020-01-27T17:32:26.520] [INFO] logFile - Run Application Success, Port:  8555
+[2020-01-27T17:34:18.161] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:34:18.176] [ERROR] logFile - { [JwtParseError: Jwt is expired]
+  name: 'JwtParseError',
+  userMessage: 'Jwt is expired',
+  message: 'Jwt is expired',
+  jwtString:
+   'eyJraWQiOiJTaUtzeUFvVUpjVVU2SG5RTl9iZDhMTnFQc3hvM3RFR0ZYOVhocjk2bEZ3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmI4UkZsbVRZU1I1Xzh4QWtKblJkMWtlaDNSQnBrN0xaaGhkS29QRVBHb0EiLCJpc3MiOiJodHRwczovL2Rldi05MDMyNDkub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNTgwMDMzODQ2LCJleHAiOjE1ODAwMzc0NDYsImNpZCI6IjBvYXFpYzh3c01iVVgwVTVTMzU2IiwidWlkIjoiMDB1cWk4eHI1bW1jaWhmS1AzNTYiLCJzY3AiOlsib3BlbmlkIl0sInN1YiI6IlppcWkuTGl1QGNvZ25pemFudC5jb20ifQ.Fk0c_kHnIl7bqpDAU_XRJdTmuOWZhiqYAmt50248Unv--50f28ZqtxiZg79cAYVagkvzhge6LU7o9g7JnYa7_LmyUVKPBBIRZR6Q-ZgHcgs7_P9eLHDJTwIR5rk8aUBejdiqvisjaW-dICeTTO23oFpx9DYsxrv2irQpsbF0ZBPStiaENVfJptuNys6W2mdeNnRYHMQskRMQPhkY5u5QYmUF9yE-Eki4GMlB7XvqpGiPxULyPCcwygAuK37odrpCl6w8gn-Dak9L5ezhkyXoVE3xYYSiJZxSw3lKumKKaUnRgR3C0n1qSizmfThCC3KtAGhy5ZA-WVcF0RgHisQXlw',
+  parsedHeader:
+   JwtHeader {
+     typ: 'JWT',
+     alg: 'RS256',
+     kid: 'SiKsyAoUJcUU6HnQN_bd8LNqPsxo3tEGFX9Xhr96lFw' },
+  parsedBody:
+   JwtBody {
+     ver: 1,
+     jti: 'AT.b8RFlmTYSR5_8xAkJnRd1keh3RBpk7LZhhdKoPEPGoA',
+     iss: 'https://dev-903249.okta.com/oauth2/default',
+     aud: 'api://default',
+     iat: 1580033846,
+     exp: 1580037446,
+     cid: '0oaqic8wsMbUX0U5S356',
+     uid: '00uqi8xr5mmcihfKP356',
+     scp: [ 'openid' ],
+     sub: 'Ziqi.Liu@cognizant.com' },
+  innerError: undefined }
+[2020-01-27T17:34:41.984] [INFO] logFile - /login request request
+[2020-01-27T17:34:43.757] [INFO] logFile - selectUserByUserName sql: SELECT COUNT(*) FROM user WHERE UPPER(username) = UPPER('Ziqi.Liu@cognizant.com');
+[2020-01-27T17:34:44.364] [INFO] logFile - GET /publication request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:34:44.408] [INFO] logFile - selectPublication sql: SELECT * FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ORDER BY id ASC LIMIT 0, 25;SELECT COUNT(*) AS total FROM publication LEFT JOIN publication_sub ON publication.id = publication_sub.publication_id WHERE 1=1 ;
+[2020-01-27T17:34:54.619] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-27T17:34:54.625] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-27T17:34:54.629] [INFO] logFile - GET /celltypes request payload: {"cellLine":"all"}
+[2020-01-27T17:34:54.631] [INFO] logFile - GET /platform request
+[2020-01-27T17:34:54.635] [INFO] logFile - GET /business request
+[2020-01-27T17:34:54.637] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-27T17:34:54.655] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-27T17:34:54.665] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-27T17:34:54.670] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-27T17:34:54.674] [INFO] logFile - /cellline/page request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:34:54.680] [INFO] logFile - selectCellTypes sql: SELECT cell_types_id, cell_types_value FROM cell_types ORDER BY cell_types_value;
+[2020-01-27T17:34:54.682] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-27T17:34:54.684] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
+[2020-01-27T17:34:54.691] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-27T17:34:54.692] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-27T17:34:54.701] [INFO] logFile - selectCellLineByPage sql: SELECT cell_line_id, cell_line_value, cell_types_fk FROM cell_line WHERE 1=1 ORDER BY cell_line_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM cell_line WHERE 1=1;
+[2020-01-27T17:34:58.027] [INFO] logFile - /product/page request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:34:58.031] [INFO] logFile - GET /platform request
+[2020-01-27T17:34:58.049] [INFO] logFile - selectProductByPage sql: SELECT product_id, product_value, product_export_value, platform_fk FROM product WHERE  1=1 ORDER BY product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM product WHERE  1=1;
+[2020-01-27T17:34:58.050] [INFO] logFile - selectPlatform sql: SELECT DISTINCT platform_value FROM platform ORDER BY platform_value
+[2020-01-27T17:35:00.334] [INFO] logFile - GET /assayPnsByProduct/page request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:35:00.338] [INFO] logFile - GET /product request payload: {"action":"all"}
+[2020-01-27T17:35:00.343] [INFO] logFile - GET /part request payload: {"product":"all","assay":"all"}
+[2020-01-27T17:35:00.345] [INFO] logFile - GET /assayForPnsProduct request
+[2020-01-27T17:35:00.362] [INFO] logFile - selectProduct sql: SELECT DISTINCT product_value FROM product ORDER BY product_value = 'Not Specified' DESC, product_value;
+[2020-01-27T17:35:00.364] [INFO] logFile - selectAssayPnsByProductByPage sql: SELECT assay_pns_by_product_id, assay_pns_by_product_value, assay_pns_by_product_fk, assay_pns_by_product_part_fk FROM assay_pns_by_product WHERE  1=1 ORDER BY assay_pns_by_product_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_pns_by_product WHERE  1=1;
+[2020-01-27T17:35:00.369] [INFO] logFile - selectPart sql: SELECT part_id, part_value FROM part ORDER BY part_value;
+[2020-01-27T17:35:00.371] [INFO] logFile - selectAssayForPnsProduct sql: SELECT DISTINCT assay_by_business_value FROM assay_by_business ORDER BY assay_by_business_value = 'Not Specified' DESC, assay_by_business_value;
+[2020-01-27T17:35:02.326] [INFO] logFile - GET /assayByBusiness/page request payload: {"index":"1","offset":"25"}
+[2020-01-27T17:35:02.327] [INFO] logFile - GET /business request
+[2020-01-27T17:35:02.346] [INFO] logFile - selectAssayByBusinessByPage sql: SELECT assay_by_business_id, assay_by_business_value, assay_by_business_export_value, assay_by_business_fk FROM assay_by_business WHERE  1=1 ORDER BY assay_by_business_value LIMIT 0, 25;SELECT COUNT(*) AS total FROM assay_by_business WHERE  1=1;
+[2020-01-27T17:35:02.348] [INFO] logFile - selectBusiness sql: SELECT business_id, business_value FROM business ORDER BY business_value;
