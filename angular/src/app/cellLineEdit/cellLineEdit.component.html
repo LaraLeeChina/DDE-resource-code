@@ -48,7 +48,7 @@
                 </div>
             </ng-template>
 
-            <div *ngIf="editName != 'Manage Cell Line' && editName != 'Assay' && editName != 'Assay By Business' && editName != 'Assay PNs By Product' && editName != 'Instrument By Platform' && editName != 'Business & Platform'">
+            <div *ngIf="editName != 'Manage Cell Line' && editName != 'Assay' && editName != 'Assay By Business' && editName != 'Assay PNs By Product' && editName != 'Product by Platform' && editName != 'Business & Platform'">
                 <kendo-grid-column *ngFor="let col of columnNames;let i = index" [field]="getField(i)" editor="string" [title]="col" [style]="{'border':1,'text-align': 'center'}"
                 [headerStyle]="{'background-color': '#FFFFFF','border':'1','text-align': 'center'}">
                     <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
